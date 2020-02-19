@@ -1,0 +1,6 @@
+window(800,600)
+rectangle(100,90)(80,80)(Green)
+rectangle(592,117)(150,60)(Blue)
+circle(306,152)(50)(Cyan)
+line(59,187)(209,209)(Yellow)
+picture(116,356)(sfmlLogo.jpg)

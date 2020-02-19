@@ -1,0 +1,20 @@
+Schrijf een Tic-Tac-Toe (3-op-een-rij) spelletje.
+Maak hiertoe een object voor het spel en een object voor een zet (command pattern).
+Sla het verloop van het spel (lijst van zetten) op in een STL container.
+Sla de huidige bordsituatie niet exoliciet op: waar nodig creeer je die door de lijst zetten te doorlopen.
+Implementeer een ‘undo’ feature door de laatste zet uit het spel te verwijderen.
+Scheid het spel deel van de interface. Biedt, met zo min mogelijk code duplicatie,
+zowel een grafische (SFML) interface als een tekst-only interface.
+
+
+	
+spel object
+zet object
+
+lijst van zetten in STL container
+undo functie
+
+Scheid spel en interface
+SFML en text only
+
+zo min mogelijk code duplicatie
