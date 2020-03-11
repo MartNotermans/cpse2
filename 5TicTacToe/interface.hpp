@@ -263,8 +263,11 @@ public:
                 
                 //vergelijk met positions
                 for(unsigned int i = 0; i < positions.size(); i++){
-                    if(mousePos.x > positions[i].x && mousePos.x < positions[i].x+200 &&
-                    mousePos.y > positions[i].y && mousePos.y < positions[i].y+200)
+                    if(
+                        mousePos.x > positions[i].x &&
+                        mousePos.x < positions[i].x+200 &&
+                        mousePos.y > positions[i].y &&
+                        mousePos.y < positions[i].y+200)
                     {
                         newPos = i;
                         std::cout<<newPos<<"\n";

@@ -212,15 +212,18 @@ public:
         undoText.setPosition(sf::Vector2f(floatScreenSizeX-200, 0) );
     }
 
-    void getInput(){
+    void getInput(){//geeft altijd -1 terug, waarom
         sf::Vector2i mousePos;
         if( sf::Mouse::isButtonPressed( sf::Mouse::Left ) && !inputPressed ){
             inputPressed = true;
             mousePos = sf::Mouse::getPosition( window );
+            std::cout<<mousePos.x<<", "<<mousePos.y<<std::endl;
         }
         if( !sf::Mouse::isButtonPressed(sf::Mouse::Left) && inputPressed){
+            inputPressed = false;
             
             for(unsigned int i = 0; i < positions.size(); i++){
+                std::cout<<"loop\n";
                 if(
                     mousePos.x > positions[i].x &&
                     mousePos.x < positions[i].x+200 &&
@@ -235,7 +238,6 @@ public:
             std::cout<<newPos<<"\n";
             game.newMove(newPos);
             
-            inputPressed = false;
             newPos = -1;
         }
 

@@ -13,6 +13,7 @@ private:
 
 public:
     bool newMove(int place){ //0 = not valid, 1 is valid
+        
         if(validMove(place)){
             if(place == 0){
                 //undo
